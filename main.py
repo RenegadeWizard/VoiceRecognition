@@ -59,11 +59,12 @@ def main():
         q25, iqr, sd = spectral_properties(data, fs)
         result = (sum/len(t))
         print(file + " : " + str(result))
-        threshold = 60.0
-        if (result < threshold or (iqr-sd) < 0) and file[4] == 'M':
+        r_threshold = 60.0
+        i_threshold = 100
+        if (result < r_threshold or (iqr-sd) < i_threshold) and file[4] == 'M':
             successful += 1
 
-        if (result > threshold or (iqr-sd) > 0) and file[4] == 'K':
+        if (result > r_threshold or (iqr-sd) > i_threshold) and file[4] == 'K':
             successful += 1
     print(str(100*successful/len(onlyfiles))+'%')
 
