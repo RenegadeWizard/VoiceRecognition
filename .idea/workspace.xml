@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="441494d4-d22d-44fa-95cc-aa2a28eb2a10" name="Default Changelist" comment="">
+    <list default="true" id="627445ed-95cc-487e-847b-8c5154a97192" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/korelacja.png" beforeDir="false" afterPath="$PROJECT_DIR$/korelacja.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -11,55 +11,53 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/VoiceRecognition$main.coverage" NAME="main Coverage Results" MODIFIED="1577479753631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1VbLNsXagOhEJ8v46W688kmhuZ5" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
-    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="VoiceRecognition" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="VoiceRecognition" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/bin/python3.7" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="trainall/002_M.wav" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -90,161 +88,41 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="441494d4-d22d-44fa-95cc-aa2a28eb2a10" name="Default Changelist" comment="" />
-      <created>1576056564466</created>
+      <changelist id="627445ed-95cc-487e-847b-8c5154a97192" name="Default Changelist" comment="" />
+      <created>1577958227212</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1576056564466</updated>
-      <workItem from="1576056565770" duration="3475000" />
-      <workItem from="1576576704736" duration="64000" />
-      <workItem from="1577271973313" duration="5572000" />
-      <workItem from="1577390100020" duration="5362000" />
-      <workItem from="1577452531366" duration="155000" />
-      <workItem from="1577461659811" duration="10614000" />
-      <workItem from="1577516819999" duration="14000" />
-      <workItem from="1577692662732" duration="2804000" />
-      <workItem from="1577695595575" duration="11115000" />
+      <updated>1577958227212</updated>
+      <workItem from="1577958229541" duration="781000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-<<<<<<< Updated upstream
   <component name="WindowStateProjectService">
-    <state x="483" y="140" key="#xdebugger.evaluate" timestamp="1577696778124">
+    <state x="184" y="91" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577958394019">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state x="483" y="140" key="#xdebugger.evaluate/0.23.1440.813@0.23.1440.813" timestamp="1577696778124" />
-    <state width="1398" height="221" key="GridCell.Tab.0.bottom" timestamp="1577717968405">
+    <state x="184" y="91" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.813@0.23.1440.813" timestamp="1577958394019" />
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom" timestamp="1577959020006">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577717968405" />
-    <state width="1398" height="221" key="GridCell.Tab.0.center" timestamp="1577717968404">
+    <state width="1398" height="209" key="GridCell.Tab.0.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577959020006" />
+    <state width="1398" height="209" key="GridCell.Tab.0.center" timestamp="1577959020005">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1577717968404" />
-    <state width="1398" height="221" key="GridCell.Tab.0.left" timestamp="1577717968404">
+    <state width="1398" height="209" key="GridCell.Tab.0.center/0.23.1440.813@0.23.1440.813" timestamp="1577959020005" />
+    <state width="1398" height="209" key="GridCell.Tab.0.left" timestamp="1577959020004">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1577717968404" />
-    <state width="1398" height="221" key="GridCell.Tab.0.right" timestamp="1577717968405">
+    <state width="1398" height="209" key="GridCell.Tab.0.left/0.23.1440.813@0.23.1440.813" timestamp="1577959020004" />
+    <state width="1398" height="209" key="GridCell.Tab.0.right" timestamp="1577959020005">
       <screen x="0" y="23" width="1440" height="813" />
     </state>
-    <state width="1398" height="221" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1577717968405" />
-    <state width="1398" height="259" key="GridCell.Tab.1.bottom" timestamp="1577697098848">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="1398" height="259" key="GridCell.Tab.1.bottom/0.23.1440.813@0.23.1440.813" timestamp="1577697098848" />
-    <state width="1398" height="259" key="GridCell.Tab.1.center" timestamp="1577697098847">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="1398" height="259" key="GridCell.Tab.1.center/0.23.1440.813@0.23.1440.813" timestamp="1577697098847" />
-    <state width="1398" height="259" key="GridCell.Tab.1.left" timestamp="1577697098846">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="1398" height="259" key="GridCell.Tab.1.left/0.23.1440.813@0.23.1440.813" timestamp="1577697098846" />
-    <state width="1398" height="259" key="GridCell.Tab.1.right" timestamp="1577697098847">
-      <screen x="0" y="23" width="1440" height="813" />
-    </state>
-    <state width="1398" height="259" key="GridCell.Tab.1.right/0.23.1440.813@0.23.1440.813" timestamp="1577697098847" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>128</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>50</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>51</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state width="1398" height="209" key="GridCell.Tab.0.right/0.23.1440.813@0.23.1440.813" timestamp="1577959020005" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/VoiceRecognition$main.coverage" NAME="main Coverage Results" MODIFIED="1577717968393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-=======
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/VoiceRecognition$czyzewski.coverage" NAME="czyzewski Coverage Results" MODIFIED="1577789265245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/VoiceRecognition$main.coverage" NAME="main Coverage Results" MODIFIED="1577957848798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.3/python_stubs/-1199943126/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="3718" column="8" selection-start-line="3718" selection-start-column="8" selection-end-line="3718" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/numpy/matrixlib/defmatrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="999" column="4" selection-start-line="999" selection-start-column="4" selection-end-line="999" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/scipy/io/wavfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="278" selection-start-line="278" selection-end-line="278" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/korelacja.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python3.7/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-426">
-          <caret line="653" column="4" selection-start-line="653" selection-start-column="4" selection-end-line="653" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IQR_Q25.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mean_IQR.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mean_Q25.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mean_sd.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sd_IQR.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sd_Q25.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
->>>>>>> Stashed changes
+    <SUITE FILE_PATH="coverage/VoiceRecognition$main.coverage" NAME="main Coverage Results" MODIFIED="1577959019992" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
