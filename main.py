@@ -1,57 +1,73 @@
 import scipy.io.wavfile
-import numpy as np
+from scipy import *
+from scipy import signal
 from os import listdir
 from os.path import isfile, join
+import sys
 
 
-def spectral_properties(y: np.ndarray, fs: int):
-    spec = np.abs(np.fft.rfft(y))
-    freq = np.fft.rfftfreq(len(y), d=1 / fs)
-    spec = np.abs(spec)
-    amp = spec / spec.sum()
-    mean = (freq * amp).sum()
-    sd = np.sqrt(np.sum(amp * ((freq - mean) ** 2)))
-    amp_cumsum = np.cumsum(amp)
-    q25 = freq[len(amp_cumsum[amp_cumsum <= 0.25]) + 1]
-    q75 = freq[len(amp_cumsum[amp_cumsum <= 0.75]) + 1]
-    iqr = q75 - q25
-    return q25, iqr, sd
+def transform(data, fs):
+    sig = []
+    if fs * 3 < len(data):
+        for i in range(fs, fs * 3):
+            sig.append(data[i])
+    else:
+        sig = data
+
+    s_fft = abs(fft(sig))
+    sig = []
+    freq_tab = range(len(s_fft) // 2)
+    for i in freq_tab:
+        sig.append(s_fft[i])
+        if i < 200 or i > 4000:
+            sig[i] = 0
+
+    return sig, freq_tab
 
 
-def main():
+def frequency(data, freq_tab):
+    filtr = []
+    wynik = data.copy()
+    filtr.append(data)
+    for i in range(1, 8):
+        filtr.append(scipy.signal.decimate(data, i))
+        for x, y in enumerate(filtr[i]):
+            wynik[x] = wynik[x] * y
+
+    wynik = [0 if i < 1 else i for i in wynik]
+    return freq_tab[argmax(wynik)]
+
+
+def check(file, successful=0):
+    fs, data = scipy.io.wavfile.read(file)
+    if len(data.shape) > 1:
+        data = data.T[0]
+    data, freq = transform(data, fs)
+
+    if frequency(data, freq) > 350:
+        if file[-5] == 'K':
+            successful += 1
+        return 'K', successful
+    else:
+        if file[-5] == 'M':
+            successful += 1
+        return 'M', successful
+
+
+def check_all():
     onlyfiles = [f for f in listdir("trainall/") if isfile(join("trainall/", f))]
     successful = 0
-
     for file in onlyfiles:
-        fs, data = scipy.io.wavfile.read("trainall/" + file)
-        if len(data.shape) > 1:
-            data = data[:, 0]
-        t = np.arange(1024, len(data), 256)
-        _sum = 0
-
-        for i in range(len(t)):
-            data_slice = data[(t[i]-1024):t[i]]
-            pre_fft = np.fft.fft(data_slice)
-            fft = abs(pre_fft[40:256])
-            _sum += np.argmax(fft)
-
-        q25, iqr, sd = spectral_properties(data, fs)
-        result = (_sum/len(t))
-        print(file + ", FreqResult: " + str(result) + ", IQR-SD: " + str(iqr-sd))
-        r_threshold = 60.0
-        i_threshold = 100
-        if (result < r_threshold or (iqr-sd) < i_threshold) and file[4] == 'M':
-            successful += 1
-            print('Recognized: Male\n')
-
-        elif (result > r_threshold or (iqr-sd) > i_threshold) and file[4] == 'K':
-            successful += 1
-            print('Recognized: Female\n')
-        else:
-            print('FAILED TO RECOGNIZE GENDER!\n')
-
+        wynik, successful = check("trainall/" + file, successful)
     print('Success rate of gender recognition: ' + str(100*successful/len(onlyfiles))+'%')
 
 
+def check_one():
+    if len(sys.argv) < 2:
+        print('Brak pliku')
+    wynik, _ = check(sys.argv[1])
+    print(wynik)
+
+
 if __name__ == '__main__':
-    main()
+    check_all()
