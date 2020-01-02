@@ -7,26 +7,24 @@ import sys
 
 
 def transform(data, fs):
-    sig = []
     if fs * 3 < len(data):
-        for i in range(fs, fs * 3):
-            sig.append(data[i])
+        sig = [data[i] for i in range(fs, fs * 3)]
     else:
         sig = data
 
     s_fft = abs(fft(sig))
-    sig = []
+    data = list()
     freq_tab = range(len(s_fft) // 2)
     for i in freq_tab:
-        sig.append(s_fft[i])
+        data.append(s_fft[i])
         if i < 200 or i > 4000:
-            sig[i] = 0
+            data[i] = 0
 
-    return sig, freq_tab
+    return data, freq_tab
 
 
 def frequency(data, freq_tab):
-    filtr = []
+    filtr = list()
     wynik = data.copy()
     filtr.append(data)
     for i in range(1, 8):
@@ -70,4 +68,4 @@ def check_one():
 
 
 if __name__ == '__main__':
-    check_all()
+    check_one()
